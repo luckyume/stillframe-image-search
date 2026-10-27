@@ -3,7 +3,7 @@ services:
     name: stillframe-image-search
     runtime: node
     plan: free
-    buildCommand: npm install && npm run build
+    buildCommand: npm ci && npm run build
     startCommand: npm start
     healthCheckPath: /recent
     envVars:
