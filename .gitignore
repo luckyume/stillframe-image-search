@@ -1,0 +1,5 @@
+node_modules/
+dist/
+data/recent-searches.json
+.env*
+.DS_Store

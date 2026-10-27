@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: stillframe-image-search
+    runtime: node
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    healthCheckPath: /recent
+    envVars:
+      - key: NODE_VERSION
+        value: 20.18.1
